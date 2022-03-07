@@ -9,49 +9,27 @@ body {
   margin: 0;
 }
 
-.black-head {
-  background-color: #202020;
-  height: 30px;
-  width: 100%;
-  border: 1px blue dashed;
-}
-
-/* header-black align */
 header {
   width: 100%;
-  min-height: 70px;
-}
-
-.container {
-  width: 75%;
-  margin: -4vh auto auto auto;
-  overflow: hidden;
-}
-
-.black-head ul {
-  float: right;
-  display: flex;
-  justify-content: space-between;
-  margin-right: 10vw;
-}
-
-.black-head ul li {
-  padding-right: 20px;
-  color: #fff;
-}
-
-/* main-header align */
-
-.main-header-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-bar-desktop ul {
-  display: flex;
-  justify-content: space-between;
+  min-height: 100px;
+  margin: auto;
+  border: 1px red solid;
+  background: url(./images/head-mobile-background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .hamburger {
-  display: none;
+  float: left;
+  margin-left: 4vw;
+  margin-top: 2vh;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
 }

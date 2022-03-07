@@ -1330,18 +1330,18 @@ button {
 </head>
 <body>
     <div class="section container">
-    <div class="scan-overview" data-id="1646646364458" id="main">
+    <div class="scan-overview" data-id="1646656381020" id="main">
         <div class="scan-overview__status">
             <div id="scan-percentage-bar" class="scan-overview__progress-bar end-animation" style="width: 100%"></div>
             <p>scanning <span id="scan-percentage">100%</span></p>
             <p class="scan-overview__scan-time">
-                scan time: <span id="scan-time">00:09</span>
+                scan time: <span id="scan-time">00:10</span>
             </p>
         </div>
         <div class="scan-overview--details">
             <div class="scan-overview--hints">
                 <p class="scan-overview__subheader">hints</p>
-                <p class="scan-overview__body--purple large" id="total-hints">18</p>
+                <p class="scan-overview__body--purple large" id="total-hints">19</p>
             </div>
             <div class="scan-overview--more-details">
                 <div class="scan-overview--scan-links">
@@ -1350,7 +1350,7 @@ button {
                     </div>
                     
                         <div class="scan-overview--time-stamp">
-                            <p class="scan-overview__subheader">Date: <span id="scan-date" class="overview--time-stamp__time-stamp" data-date="2022-03-07T09:45:55.265Z">2022-03-07T09:45:55.265Z</span></p>
+                            <p class="scan-overview__subheader">Date: <span id="scan-date" class="overview--time-stamp__time-stamp" data-date="2022-03-07T12:32:50.120Z">2022-03-07T12:32:50.120Z</span></p>
                         </div>
                     
                 </div>
@@ -1455,11 +1455,11 @@ button {
             <div class="rule-tile__results">
                 <div class="rule-tile__result-wrapper">
                     <p class="rule-tile__sub-category">hints</p>
-                    <p class="rule-tile__sub-category rule-tile__hints"><span>0</span></p>
+                    <p class="rule-tile__sub-category rule-tile__hints"><span>1</span></p>
                 </div>
                 <div class="rule-tile__result-wrapper">
                     <p class="rule-tile__sub-category">passed</p>
-                    <p class="rule-tile__sub-category"><span class="rule-tile__passed">3</span>&nbsp;/&nbsp;3</p>
+                    <p class="rule-tile__sub-category"><span class="rule-tile__passed">2</span>&nbsp;/&nbsp;3</p>
                 </div>
             </div>
         </div>
@@ -2306,14 +2306,53 @@ button {
     <div class="rule-result--category">
         <h3 id="category-security">Security <a href="#category-security" class="hint-link" title="Security"></a></h3>
         
+            <button title="expand" class="button-expand-all expanded">close all</button>
+
+        
     </div>
     
-        <div class="rule-result--details">
-    <div class="rule-result__message--passed">
-        <p>No issues</p>
-    </div>
-</div>
+        
+            <details open class="rule-result--details" id="sri" aria-expanded="true" role="group">
+    <summary class="rule-title" title="show sri&#39;s result details" role="button">sri: 1 hints</summary>
+    <div class="rule-content">
+        
+        <div class="rule-doc-buttons">
+            <a class="rule-doc-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/hints/hint-sri/#why-is-this-important"
+                title="sri - Why is this important">
+                Why is this important <span class="rule-doc-icon"></span>
+            </a>
 
+            <a class="rule-doc-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/hints/hint-sri/#examples-that-pass-the-hint"
+                title="sri - How to fix it">
+                How to fix it <span class="rule-doc-icon"></span>
+            </a>
+        </div>
+        
+        
+            <div class="rule-result--details__body">
+                <p id="hint-sri-1">
+                    <span class="rule-result--details__hint-number">hint #1:</span> Cross-origin resource needs a &#39;crossorigin&#39; attribute to be eligible for integrity validation. <a href="#hint-sri-1" class="hint-link" title="sri: hint #1"></a>
+                </p>
+                
+                <p>
+                    <a class="rule-result--details__hint-link" target="_blank" rel="noopener noreferrer" href="file:///home/shubh/Documents/The-Capstone/index.html">
+                        file:///home/shubh/Docume … The-Capstone/index.html
+                    </a>
+                </p>
+                
+                
+                <div class="rule-result__code">
+                    <code class="">&lt;link href=&#34;https://fonts.googleapis.com/css2?family=Lato&amp;amp;display=swap&#34; rel=&#34;stylesheet&#34;&gt;</code>
+                </div>
+                
+                
+            </div>
+            
+        
+    </div>
+</details>
+
+        
     
 </section>
 
