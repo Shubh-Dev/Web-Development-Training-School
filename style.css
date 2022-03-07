@@ -1,3 +1,16 @@
 * {
   list-style: none;
 }
+
+.black-head {
+  background-color: #202020;
+  height: 15px;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  min-height: 85px;
+  background-color: yellow;
+  border: 1px dashed red;
+}
