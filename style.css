@@ -4,7 +4,7 @@
 }
 
 body {
-  font: 15px/1.5 'Lato', Ariel, helvetica, sans-serif;
+  font: 18px/1.5 'Lato', Ariel, helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -13,10 +13,13 @@ header {
   width: 100%;
   min-height: 100px;
   margin: auto;
-  border: 1px red solid;
   background: url(./images/head-mobile-background.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.description-mobile-1 {
+  border: 1px dashed red;
 }
 
 .hamburger {
@@ -33,3 +36,129 @@ header {
   transition: all 0.3s ease-in-out;
   background-color: black;
 }
+
+/* showcase-mobile */
+
+.showcase-mobile {
+  background-color: #f8f8f8;
+  width: 100%;
+}
+
+.container-mobile {
+  width: 93%;
+  margin: auto;
+}
+
+/* program sec */
+.curriculumn-mobile-grid {
+  background-image: url(./images/dark-svg-background-image.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  margin: 20px auto auto auto;
+}
+
+.course-modules-mobile {
+  margin: auto;
+  width: 93%;
+}
+
+.curriculumn-mobile-grid h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.orange-text {
+  color: #ec5242;
+}
+
+.white-text {
+  color: #fff;
+}
+
+h1 {
+  font-size: 50px;
+  font-stretch: extra-condensed;
+  font-family: Lato, sans-serif, Helvetica;
+  font-weight: bolder;
+  margin-top: -0.25vh;
+}
+
+.start-date-1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.announcement-mobile-1 {
+  border: 4px solid white;
+  padding-left: 10px;
+}
+
+.orange-bar-mobile {
+  display: block;
+  margin: 5px auto;
+  width: 10vw;
+  height: 3px;
+  background: #ec5242;
+}
+
+.orange-line-mobile {
+  display: block;
+  justify-content: center;
+}
+
+.box-flex {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40px 1.2fr 3fr;
+  gap: 15px;
+}
+
+.html-logo,
+.skill-name-mobile {
+  margin: auto;
+  display: block;
+}
+
+.join-class-button {
+  width: 70vw;
+  height: 4em;
+  background-color: #ec5242;
+  color: #fff;
+  margin: 5vh auto 7vh 15vw;
+}
+
+/* trainer details */
+
+.trainer-details {
+  width: 93%;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.trainer-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+
+.trainer-1-image {
+  margin: auto;
+}
+
+.red-para {
+  color: red;
+}
+
+.more-button {
+  width: 100%;
+  background-color: #fff;
+  height: 60px;
+  margin-bottom: 40px;
+  border: 1px black solid;
+}
+
+/* about page */
