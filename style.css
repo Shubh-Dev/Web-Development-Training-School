@@ -12,7 +12,8 @@ body {
 .black-head,
 .main-head-container,
 .nav-bar-desktop,
-.main-logo {
+.main-logo,
+.header-button-1 {
   display: none;
 }
 
@@ -238,6 +239,8 @@ footer {
     display: none;
   }
 
+  /* black Header */
+
   .black-head,
   .main-head-container,
   .nav-bar-desktop,
@@ -246,6 +249,114 @@ footer {
   }
 
   header {
+    background-image: none;
     display: flex;
+    flex-direction: column;
+  }
+
+  .black-head {
+    background-color: #272a31;
+    width: 100%;
+    height: 35px;
+    margin: auto;
+  }
+
+  .black-head ul {
+    float: right;
+    margin-right: 10vw;
+    margin-top: 0;
+    display: flex;
+  }
+
+  .black-head ul li {
+    padding-left: 15px;
+    color: #fff;
+  }
+
+  .black-head ul li h5 {
+    margin-top: 3px;
+    font-weight: 300;
+  }
+
+  /* white header */
+
+  .main-header-content {
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-button-1 {
+    display: block;
+    width: 170px;
+    height: 60px;
+    border: 5px solid #ec5242;
+    background-color: #fff;
+    color: #ec5242;
+    margin-top: 17px;
+  }
+
+  .nav-bar-desktop ul {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  .nav-bar-desktop ul li a {
+    color: black;
+  }
+
+  /* showcase-desktop */
+
+  .showcase-mobile {
+    background-image: url(./images/head-mobile-background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 7vh;
+  }
+  .container-mobile {
+    width: 80%;
+    height: auto;
+  }
+
+  .container-mobile h2 {
+    padding-top: 50px;
+    font-size: 34px;
+  }
+
+  .description-mobile-1 {
+    max-width: 65%;
+  }
+
+  .width-half {
+    max-width: 75%;
+  }
+
+  .start-date-1 {
+    margin-top: -20px;
+  }
+
+  .location-1 {
+    margin-top: -7px;
+    font-size: 20px;
+  }
+
+  /* program details section */
+
+  .course-modules-mobile {
+    display: flex;
+    gap: 10px;
+  }
+
+  /* .bootstrap-mobile {
+    padding-top: -10px;
+  } */
+
+  .box-flex {
+    display: flex;
+    column-gap: 5px;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
