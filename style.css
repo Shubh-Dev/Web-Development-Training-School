@@ -13,7 +13,8 @@ body {
 .main-head-container,
 .nav-bar-desktop,
 .main-logo,
-.header-button-1 {
+.header-button-1,
+.see-whole-program {
   display: none;
 }
 
@@ -121,7 +122,7 @@ h1,
   display: grid;
   grid-template-columns: 40px 1.2fr 3fr;
   gap: 15px;
-  background-color: rgba(128, 128, 128, 0.24);
+  background-color: rgba(2, 2, 2, 0.479);
   margin-top: 10px;
 }
 
@@ -235,7 +236,9 @@ footer {
 }
 
 @media (min-width: 768px) {
-  #hamburger {
+  #hamburger,
+  .join-class-button,
+  .trainer-details {
     display: none;
   }
 
@@ -313,8 +316,10 @@ footer {
     background-image: url(./images/head-mobile-background.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    padding-bottom: 7vh;
+    width: 100%;
+    height: auto;
   }
+
   .container-mobile {
     width: 80%;
     height: auto;
@@ -349,14 +354,18 @@ footer {
     gap: 10px;
   }
 
-  /* .bootstrap-mobile {
-    padding-top: -10px;
-  } */
-
   .box-flex {
     display: flex;
-    column-gap: 5px;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .see-whole-program {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 50px;
   }
 }
