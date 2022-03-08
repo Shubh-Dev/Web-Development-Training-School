@@ -4,9 +4,16 @@
 }
 
 body {
-  font: 18px/1.5 'Lato', Ariel, helvetica, sans-serif;
+  font: 18px/1.9 'Lato', Ariel, helvetica, sans-serif;
   padding: 0;
   margin: 0;
+}
+
+.black-head,
+.main-head-container,
+.nav-bar-desktop,
+.main-logo {
+  display: none;
 }
 
 header {
@@ -23,7 +30,8 @@ header {
   padding-left: 10px;
 }
 
-.hamburger {
+#hamburger {
+  display: block;
   float: left;
   margin-left: 4vw;
   margin-top: 2vh;
@@ -41,8 +49,9 @@ header {
 /* showcase-mobile */
 
 .showcase-mobile {
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;
   width: 100%;
+  margin-top: -3vh;
 }
 
 .container-mobile {
@@ -77,12 +86,14 @@ header {
   color: #fff;
 }
 
-h1 {
+h1,
+.second-heading {
   font-size: 50px;
   font-stretch: extra-condensed;
   font-family: Lato, sans-serif, Helvetica;
   font-weight: bolder;
   margin-top: -0.25vh;
+  line-height: 1.1;
 }
 
 .start-date-1 {
@@ -109,6 +120,8 @@ h1 {
   display: grid;
   grid-template-columns: 40px 1.2fr 3fr;
   gap: 15px;
+  background-color: rgba(128, 128, 128, 0.24);
+  margin-top: 10px;
 }
 
 .html-logo,
@@ -159,3 +172,80 @@ h1 {
 }
 
 /* about page */
+
+.description-mobile-2 {
+  background: #fff;
+  border: 1px lightgrey solid;
+}
+
+.white-back {
+  padding: 10px 10px;
+}
+
+.announcement-mobile-2 h4 {
+  margin-top: -0.25vh;
+}
+
+.announcement-mobile-2 p {
+  margin-bottom: -0.25vh;
+}
+
+.announcement-mobile-2 {
+  padding-bottom: 10px;
+}
+
+.box-1 {
+  width: 93%;
+  margin: auto;
+}
+
+.box-2 {
+  width: 93%;
+  margin: auto;
+  height: 11vh;
+  border: 1px lightgrey solid;
+}
+
+.main-logo-body {
+  color: #ec5242;
+}
+
+/* previous class section */
+
+.previous-class {
+  width: 93%;
+  margin: auto;
+}
+
+.blurr-img img {
+  filter: sepia();
+}
+
+footer {
+  min-height: 100px;
+}
+
+.footer-content {
+  width: 75%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+
+  .black-head,
+  .main-head-container,
+  .nav-bar-desktop,
+  .main-logo {
+    display: block;
+  }
+
+  header {
+    display: flex;
+  }
+}
