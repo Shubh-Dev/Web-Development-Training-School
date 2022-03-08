@@ -235,6 +235,38 @@ footer {
   gap: 20px;
 }
 
+/* popup window */
+
+.popMobileWindow {
+  display: none;
+}
+
+.popMobileWindow.active {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #272a31;
+  top: 0;
+  right: 0;
+  opacity: 0.95;
+  animation: mobile-popup 70ms;
+  transition: ease-in-out;
+}
+
+@keyframes mobile-popup {
+  0% { width: 25%; }
+  25% { width: 50%; }
+  50% { width: 75%; }
+  75% { width: 90%; }
+  100% { width: 100%; }
+}
+
+.pop-up-mobile-window {
+  margin: auto;
+}
+
 @media (min-width: 768px) {
   #hamburger,
   .join-class-button,
