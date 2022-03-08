@@ -19,7 +19,8 @@ header {
 }
 
 .description-mobile-1 {
-  border: 1px dashed red;
+  border: 4px solid #fff;
+  padding-left: 10px;
 }
 
 .hamburger {
@@ -87,11 +88,7 @@ h1 {
 .start-date-1 {
   font-size: 25px;
   font-weight: bold;
-}
-
-.announcement-mobile-1 {
-  border: 4px solid white;
-  padding-left: 10px;
+  margin-bottom: -0.25vh;
 }
 
 .orange-bar-mobile {
