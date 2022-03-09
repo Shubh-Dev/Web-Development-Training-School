@@ -43,13 +43,17 @@ const arrOfImageData = [
   },
 ];
 // image description grid
-const mainImageGrid = document.querySelector('.image-grig');
-mainImageGrid.innerHTML += arrOfImageData.map((project) => (
-  `<div class = 'projects'>
- <div class = "trainer-image">
-      
- </div>
- </div>`
+const mainImageGrid = document.querySelector('.speaker');
+mainImageGrid.innerHTML += arrOfImageData.map((projects) => (
+  `<div class="trainer-detail-grid">
+     <div class="${projects.image}">
+     </div>
+     <div class="trainer-description">
+     <h4 class="name">"${projects.name}"</h4>
+     <a class="trainer-designation">${projects.designation}</a>
+     <p class="comments">${projects.description}</p>
+  </div>
+</div>`
 ));
 // mobile-popup-window
 const div = document.createElement('div');
