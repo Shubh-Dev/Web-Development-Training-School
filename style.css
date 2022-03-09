@@ -54,11 +54,16 @@ header {
   background-color: #f5f5f5;
   width: 100%;
   margin-top: -3vh;
+  height: auto;
 }
 
 .container-mobile {
   width: 93%;
   margin: auto;
+}
+
+.second-heading {
+  padding-top: 40px;
 }
 
 /* program sec */
@@ -90,7 +95,7 @@ header {
 
 h1,
 .second-heading {
-  font-size: 50px;
+  font-size: 60px;
   font-stretch: extra-condensed;
   font-family: Lato, sans-serif, Helvetica;
   font-weight: bolder;
@@ -204,7 +209,7 @@ h1,
 .box-2 {
   width: 93%;
   margin: auto;
-  height: 11vh;
+  height: auto;
   border: 1px lightgrey solid;
 }
 
@@ -216,6 +221,10 @@ h1,
 
 .previous-class {
   width: 93%;
+  margin: auto;
+}
+
+.blurr-img {
   margin: auto;
 }
 
@@ -255,6 +264,22 @@ footer {
   transition: ease-in-out;
 }
 
+.home {
+  color: #ec5242;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.inner-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.popMobileCrossbutton {
+  margin-left: 80%;
+  margin-top: 3vh;
+}
+
 @keyframes mobile-popup {
   0% { width: 25%; }
   25% { width: 50%; }
@@ -270,7 +295,8 @@ footer {
 @media (min-width: 768px) {
   #hamburger,
   .join-class-button,
-  .trainer-details {
+  .trainer-details,
+  .no-display-text {
     display: none;
   }
 
@@ -287,6 +313,9 @@ footer {
     background-image: none;
     display: flex;
     flex-direction: column;
+    min-height: 100px;
+    height: 120px;
+    border: 1px dashed red;
   }
 
   .black-head {
@@ -298,7 +327,7 @@ footer {
 
   .black-head ul {
     float: right;
-    margin-right: 10vw;
+    margin-right: 20vw;
     margin-top: 0;
     display: flex;
   }
@@ -329,7 +358,7 @@ footer {
     border: 5px solid #ec5242;
     background-color: #fff;
     color: #ec5242;
-    margin-top: 17px;
+    margin-top: 10px;
   }
 
   .nav-bar-desktop ul {
@@ -350,6 +379,7 @@ footer {
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
+    margin-top: 1vh;
   }
 
   .container-mobile {
@@ -357,10 +387,18 @@ footer {
     height: auto;
   }
 
-  .container-mobile h2 {
+  .second-heading {
+    padding-top: 70px;
+  }
+
+  .hello-text {
+    margin-top: 50px;
+  }
+
+  /* .container-mobile h2 {
     padding-top: 50px;
     font-size: 34px;
-  }
+  } */
 
   .description-mobile-1 {
     max-width: 65%;
@@ -399,5 +437,22 @@ footer {
     text-transform: uppercase;
     color: #fff;
     padding-bottom: 50px;
+  }
+
+  /* about page */
+
+  .box-1 {
+    width: 60%;
+  }
+
+  .box-2 {
+    width: 50%;
+  }
+
+  .blurr-img {
+    margin: auto;
+    width: 75%;
+    display: flex;
+    gap: 20px;
   }
 }
