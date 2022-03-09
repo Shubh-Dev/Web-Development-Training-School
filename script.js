@@ -90,3 +90,13 @@ popUpMobileWindow.addEventListener('click', () => {
     mobilepopButton.classList.remove('active');
   });
 });
+
+const partnerImg = document.createElement('img');
+partnerImg.className = 'partner-image-set';
+partnerImg.src = './images/Partners.jpg';
+document.querySelector('.partner-image-template').appendChild(partnerImg);
+
+// const partnerImg2 = document.createElement('img');
+// partnerImg2.className = 'partner-image-set2';
+// partnerImg2.src = './images/Partners-1.jpg';
+// document.querySelector('.image-partner-mob').appendChild(partnerImg2);
