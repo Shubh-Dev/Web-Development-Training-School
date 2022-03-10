@@ -17,7 +17,9 @@ body {
 .header-button-1,
 .see-whole-program,
 .footer-1,
-.partner-image-template {
+.partner-image-template,
+.dynamic-footer,
+.partner-image-desktop-2 {
   display: none;
 }
 
@@ -197,6 +199,10 @@ h1,
   border: 1px black solid;
 }
 
+.more-button:hover {
+  background-color: #f5a49a;
+}
+
 /* about page */
 
 .description-mobile-2 {
@@ -329,6 +335,7 @@ h1,
 .dynamic-img {
   width: 150px;
   height: 160px;
+  margin-top: 30px;
 
   /* margin-top: 20px; */
 }
@@ -359,7 +366,9 @@ h1,
   .main-head-container,
   .nav-bar-desktop,
   .main-logo,
-  .partner-image-template {
+  .partner-image-template,
+  .partner-image-desktop-2,
+  .dynamic-footer {
     display: block;
   }
 
@@ -380,7 +389,7 @@ h1,
 
   .black-head ul {
     float: right;
-    margin-right: 20vw;
+    margin-right: 14vw;
     margin-top: 0;
     display: flex;
   }
@@ -395,6 +404,10 @@ h1,
     font-weight: 300;
   }
 
+  header .current a {
+    color: #ec5242;
+  }
+
   .black-head ul li a {
     color: #fff;
   }
@@ -403,7 +416,7 @@ h1,
 
   .main-header-content {
     margin: auto;
-    width: 75%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
   }
@@ -457,7 +470,7 @@ h1,
 
   .nav-bar-desktop ul {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     padding-top: 10px;
   }
 
@@ -590,8 +603,10 @@ h1,
   /* dynamic-section */
 
   .speaker {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
   }
 
   .dynamic-img {
@@ -601,7 +616,30 @@ h1,
   }
 
   .trainer-detail-grid {
+    margin: 0 auto;
     display: flex;
     gap: 20px;
+    width: 40vw;
   }
+
+  .partner-image-desktop-2 {
+    width: 100%;
+    height: 200px;
+    margin-top: 5vh;
+  }
+
+  .partner-image-set2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-page-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-left: 20%;
+  }
+}
+
+.drop-down-image-list {
+  display: none;
 }

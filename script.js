@@ -11,41 +11,73 @@ const arrOfImageData = [
     image: './images/img-2.jpg',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
-    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip occaecat veniam. ng aute eu.',
+    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip.',
   },
   {
     name: 'Ryan Merkley',
     image: './images/img-3.jpg',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
-    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip g aute eu.',
+    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip g aut.',
   },
   {
     name: 'SohYeong Noh',
     image: './images/img-4.jpg',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
-    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip occaecat ute eu.',
+    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip.',
   },
   {
     name: 'Julia Leda',
     image: './images/img-5.jpg',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
-    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum ing aute eu.',
+    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum ing aute .',
   },
   {
     name: 'Lila Tretikov',
     image: './images/img-6.jpg',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
-    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip occaecat veniam Proident.',
+    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip.',
+  },
+];
+
+const arrOfImageDataMobile = [
+  {
+    name: 'Yochai Benkler',
+    image: './images/img-1.jpg',
+    designation: 'Anim ad et ullamco sint ad esse aliqua',
+    line: 'orange-bar-mobile',
+    description: 'Qui esse est quis non qui llamco aute duis adipisicing aute eu.',
+  },
+  {
+    name: 'Kilnam chon',
+    image: './images/img-2.jpg',
+    designation: 'Anim ad et ullamco sint ad esse aliqua',
+    line: 'orange-bar-mobile',
+    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip.',
   },
 ];
 // image description grid
 const mainImageGrid = document.querySelector('.speaker');
-mainImageGrid.innerHTML += arrOfImageData.map((projects) => (
-  `<div class="trainer-detail-grid">
+if (window.innerWidth > 768) {
+  arrOfImageData.forEach((projects, index) => {
+    mainImageGrid.innerHTML += `<div class="trainer-detail-grid drop-down-image-list">
+  <div class = dynamic-image-container> 
+     <img class = "dynamic-img" src= "${projects.image}">
+  </div>
+  <div class="trainer-description">
+     <h4 class="name">"${projects.name}"</h4>
+     <a class="trainer-designation red-text">${projects.designation}</a>
+     <p class="comments">${projects.description}</p>
+  </div>
+</div>`;
+  });
+} else if (window.innerWidth < 786) {
+  const mainImageGrid = document.querySelector('.speaker');
+  mainImageGrid.innerHTML += arrOfImageDataMobile.map((projects) => (
+    `<div class="trainer-detail-grid">
 
   <div class = dynamic-image-container> 
      <img class = "dynamic-img" src= "${projects.image}">
@@ -58,7 +90,8 @@ mainImageGrid.innerHTML += arrOfImageData.map((projects) => (
   </div>
 
 </div>`
-));
+  ));
+}
 // mobile-popup-window
 const div = document.createElement('div');
 div.className = 'popMobileWindow';
@@ -103,8 +136,3 @@ const partnerImg = document.createElement('img');
 partnerImg.className = 'partner-image-set';
 partnerImg.src = './images/Partners.jpg';
 document.querySelector('.partner-image-template').appendChild(partnerImg);
-
-const partnerImg2 = document.createElement('img');
-partnerImg2.className = 'partner-image-set2';
-partnerImg2.src = './images/Partners-1.jpg';
-document.querySelector('.partner-image-desktop-2').appendChild(partnerImg2);
