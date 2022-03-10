@@ -1,97 +1,64 @@
 const arrOfImageData = [
   {
     name: 'Yochai Benkler',
-    image: './images/img-1.jpg',
+    image: './images/image-1.png',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
     description: 'Qui esse est quis non qui llamco aute duis adipisicing aute eu.',
   },
   {
     name: 'Kilnam chon',
-    image: './images/img-2.jpg',
+    image: './images/image-2.png',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
     description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip.',
   },
   {
     name: 'Ryan Merkley',
-    image: './images/img-3.jpg',
+    image: './images/image-3.png',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
     description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip g aut.',
   },
   {
     name: 'SohYeong Noh',
-    image: './images/img-4.jpg',
+    image: './images/image-4.png',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
     description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip.',
   },
   {
     name: 'Julia Leda',
-    image: './images/img-5.jpg',
+    image: './images/image-5.png',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
     description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum ing aute .',
   },
   {
     name: 'Lila Tretikov',
-    image: './images/img-6.jpg',
+    image: './images/image-6.png',
     designation: 'Anim ad et ullamco sint ad esse aliqua',
     line: 'orange-bar-mobile',
     description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip.',
   },
 ];
 
-const arrOfImageDataMobile = [
-  {
-    name: 'Yochai Benkler',
-    image: './images/img-1.jpg',
-    designation: 'Anim ad et ullamco sint ad esse aliqua',
-    line: 'orange-bar-mobile',
-    description: 'Qui esse est quis non qui llamco aute duis adipisicing aute eu.',
-  },
-  {
-    name: 'Kilnam chon',
-    image: './images/img-2.jpg',
-    designation: 'Anim ad et ullamco sint ad esse aliqua',
-    line: 'orange-bar-mobile',
-    description: 'Qui esse est quis non qui proident et eiusmod ea.Consectetur cillum aliquip.',
-  },
-];
 // image description grid
 const mainImageGrid = document.querySelector('.speaker');
-if (window.innerWidth > 768) {
-  arrOfImageData.forEach((projects, index) => {
-    mainImageGrid.innerHTML += `<div class="trainer-detail-grid drop-down-image-list">
+arrOfImageData.forEach((projects) => {
+  mainImageGrid.innerHTML += `<div class="trainer-detail-grid drop-down-image-list">
   <div class = dynamic-image-container> 
      <img class = "dynamic-img" src= "${projects.image}">
   </div>
   <div class="trainer-description">
      <h4 class="name">"${projects.name}"</h4>
      <a class="trainer-designation red-text">${projects.designation}</a>
+     <br>
+     <div class = "grey-line"></div>
      <p class="comments">${projects.description}</p>
   </div>
 </div>`;
-  });
-} else if (window.innerWidth < 786) {
-  const mainImageGrid = document.querySelector('.speaker');
-  mainImageGrid.innerHTML += arrOfImageDataMobile.map((projects) => (
-    `<div class="trainer-detail-grid">
-
-  <div class = dynamic-image-container> 
-     <img class = "dynamic-img" src= "${projects.image}">
-  </div>
-
-  <div class="trainer-description">
-     <h4 class="name">"${projects.name}"</h4>
-     <a class="trainer-designation red-text">${projects.designation}</a>
-     <p class="comments">${projects.description}</p>
-  </div>
-
-</div>`
-  ));
-}
+});
 // mobile-popup-window
 const div = document.createElement('div');
 div.className = 'popMobileWindow';
