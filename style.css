@@ -1,6 +1,7 @@
 * {
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -319,10 +320,29 @@ h1,
   margin: auto;
 }
 
+/* dynamic images */
+
+.dynamic-img {
+  width: 150px;
+  height: 160px;
+
+  /* margin-top: 20px; */
+}
+
+.trainer-detail-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.red-text {
+  color: red;
+}
+
+/* logo style */
+
 @media (min-width: 768px) {
   #hamburger,
   .join-class-button,
-  .trainer-details,
   .no-display-text,
   .image-partner-mob {
     display: none;
@@ -361,13 +381,17 @@ h1,
   }
 
   .black-head ul li {
-    padding-left: 15px;
+    padding-left: 20px;
     color: #fff;
   }
 
   .black-head ul li h5 {
     margin-top: 3px;
     font-weight: 300;
+  }
+
+  .black-head ul li a {
+    color: #fff;
   }
 
   /* white header */
@@ -381,6 +405,33 @@ h1,
 
   .main-logo-body {
     margin-top: 10px;
+    animation: sliding-logo 1s;
+  }
+
+  @keyframes sliding-logo {
+    0% {
+      margin-left: 0%;
+    }
+
+    20% {
+      margin-left: 20%;
+    }
+
+    40% {
+      margin-right: -40%;
+    }
+
+    60% {
+      margin-left: -60%;
+    }
+
+    80% {
+      margin-right: 40%;
+    }
+
+    100% {
+      margin-left: 20%;
+    }
   }
 
   .header-button-1 {
@@ -391,6 +442,12 @@ h1,
     background-color: #fff;
     color: #ec5242;
     margin-top: 12px;
+  }
+
+  .header-button-1:hover {
+    background-color: #ee8f84;
+    color: #fff;
+    transform: scale(1.1);
   }
 
   .nav-bar-desktop ul {
@@ -460,6 +517,7 @@ h1,
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    transform: translateX(5px);
   }
 
   .see-whole-program {
@@ -489,9 +547,9 @@ h1,
     gap: 20px;
   }
 
-  .projects {
+  /* .projects {
     display: grid;
-  }
+  } */
 
   .partner-image-template {
     width: 100%;
@@ -507,5 +565,23 @@ h1,
   .about-footer {
     background-color: #272a31;
     color: #fff;
+  }
+
+  /* dynamic-section */
+
+  .speaker {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dynamic-img {
+    width: 150px;
+    height: 160px;
+    margin-top: 20px;
+  }
+
+  .trainer-detail-grid {
+    display: flex;
+    gap: 20px;
   }
 }
