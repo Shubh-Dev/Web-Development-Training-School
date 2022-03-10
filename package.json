@@ -1,8 +1,8 @@
 {
   "name": "The-Capstone",
   "version": "1.0.0",
-  "description": "Microverse CApstone Project",
-  "main": "index.js",
+  "description": "## Description:  This Project is about a web development training company, built with business specifications and similar to real-world projects. The original design was created by Cindi Shin. She is a GUI and graphic designer, lives in Seoul, Korea. Apart from working as a GUI designer, she dedicates her time in personal projects in different areas.   The pages look almost identical to the original. However, content has ben changed according to the project requirements. For now only two pages are made, the Home page and the About page. Remaining pages will be added shortly.",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,14 +18,6 @@
   },
   "homepage": "https://github.com/Shubh-Dev/The-Capstone#readme",
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.25.4",
-    "hint": "^6.1.9",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+    "hint": "^6.1.9"
   }
 }
