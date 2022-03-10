@@ -146,6 +146,10 @@ h1,
   margin-top: 10px;
 }
 
+.box-flex:hover {
+  border: 1px solid wheat;
+}
+
 .html-logo,
 .skill-name-mobile {
   margin: auto;
@@ -344,7 +348,8 @@ h1,
   #hamburger,
   .join-class-button,
   .no-display-text,
-  .image-partner-mob {
+  .image-partner-mob,
+  .more-button {
     display: none;
   }
 
@@ -484,6 +489,15 @@ h1,
     margin-top: 50px;
   }
 
+  .white-text {
+    text-align: center;
+  }
+
+  .company-name-mody-sec {
+    width: 100%;
+    height: 100%;
+  }
+
   /* .container-mobile h2 {
     padding-top: 50px;
     font-size: 34px;
@@ -518,6 +532,11 @@ h1,
     flex-direction: column;
     justify-content: space-around;
     transform: translateX(5px);
+    padding-top: 10px;
+  }
+
+  .box-flex:hover {
+    border: 1px solid wheat;
   }
 
   .see-whole-program {
@@ -537,6 +556,7 @@ h1,
 
   .box-2 {
     width: 50%;
+    height: 250px;
   }
 
   .blurr-img {
