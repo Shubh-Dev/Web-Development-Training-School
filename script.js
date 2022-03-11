@@ -97,4 +97,3 @@ popUpMobileWindow.addEventListener('click', () => {
     mobilepopButton.classList.remove('active');
   });
 });
-
