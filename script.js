@@ -43,7 +43,6 @@ const arrOfImageData = [
   },
 ];
 
-// image description grid
 const mainImageGrid = document.querySelector('.speaker');
 arrOfImageData.forEach((projects) => {
   mainImageGrid.innerHTML += `<div class="trainer-detail-grid drop-down-image-list">
@@ -60,27 +59,6 @@ arrOfImageData.forEach((projects) => {
 </div>`;
 });
 
-// document.getElementsByClassName('more-button')[0].addEventListener('click', () => {
-//   let trainers;
-//   if (document.getElementsByClassName('more-button')[0].innerHTML.indexOf('MORE') === 0) {
-//     trainers = document.getElementsByClassName('speaker');
-//     for (let i = 2; i < trainers.length; i += 1) {
-//       trainers[i].classList.remove('drop-down-image-list');
-//     }
-//     document.getElementsByClassName('more-button')[0].innerHTML = `LESS
-//     <div><i class="fa fa-angle-up" aria-hidden="true"></i>
-//     </div>`;
-//   } else {
-//     trainers = document.getElementsByClassName('speakers');
-//     for (let i = 2; i < trainers.length; i += 1) {
-//       trainers[i].classList.add('drop-down-image-list');
-//     }
-//     document.getElementsByClassName('more-button')[0].innerHTML = `MORE
-//       <div><i class="fa fa-angle-down" aria-hidden="true"></i>
-//       </div>`;
-//   }
-// });
-// mobile-popup-window
 const div = document.createElement('div');
 div.className = 'popMobileWindow';
 const crossButton = document.createElement('img');
@@ -120,7 +98,3 @@ popUpMobileWindow.addEventListener('click', () => {
   });
 });
 
-const partnerImg = document.createElement('img');
-partnerImg.className = 'partner-image-set';
-partnerImg.src = './images/Partners.jpg';
-document.querySelector('.partner-image-template').appendChild(partnerImg);

@@ -66,8 +66,6 @@ header {
   background-color: black;
 }
 
-/* showcase-mobile */
-
 .showcase-mobile {
   background-color: #f5f5f5;
   width: 100%;
@@ -84,7 +82,6 @@ header {
   padding-top: 40px;
 }
 
-/* program sec */
 .curriculumn-mobile-grid {
   background-image: url(./images/dark-svg-background-image.jpg);
   background-size: 100% 100%;
@@ -122,7 +119,7 @@ h1,
 }
 
 .start-date-1 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: -0.25vh;
 }
@@ -167,8 +164,6 @@ h1,
   margin: 5vh auto 7vh 15vw;
 }
 
-/* trainer details */
-
 .trainer-details {
   width: 93%;
   margin: auto;
@@ -176,6 +171,11 @@ h1,
 
 .text-center {
   text-align: center;
+}
+
+.company-name-body-sec {
+  width: 100%;
+  height: 100%;
 }
 
 .trainer-1 {
@@ -204,8 +204,6 @@ h1,
   background-color: #f5a49a;
 }
 
-/* about page */
-
 .description-mobile-2 {
   background: #fff;
   border: 1px lightgrey solid;
@@ -216,7 +214,7 @@ h1,
 }
 
 .announcement-mobile-1 {
-  height: 20vh;
+  height: auto;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -241,15 +239,13 @@ h1,
 .box-2 {
   width: 93%;
   margin: auto;
-  height: auto;
+  height: 250px;
   border: 1px lightgrey solid;
 }
 
 .main-logo-body {
   color: #ec5242;
 }
-
-/* previous class section */
 
 .previous-class {
   width: 93%;
@@ -282,8 +278,6 @@ h1,
   justify-content: space-between;
   gap: 20px;
 }
-
-/* popup window */
 
 .popMobileWindow {
   display: none;
@@ -331,14 +325,11 @@ h1,
   margin: auto;
 }
 
-/* dynamic images */
-
 .dynamic-img {
   width: 150px;
   height: 160px;
   margin-top: 30px;
 
-  /* margin-top: 20px; */
 }
 
 .trainer-detail-grid {
@@ -350,8 +341,6 @@ h1,
   color: red;
 }
 
-/* logo style */
-
 @media (min-width: 768px) {
   #hamburger,
   .join-class-button,
@@ -360,8 +349,6 @@ h1,
   .more-button {
     display: none;
   }
-
-  /* black Header */
 
   .black-head,
   .main-head-container,
@@ -411,8 +398,6 @@ h1,
   .black-head ul li a {
     color: #fff;
   }
-
-  /* white header */
 
   .main-header-content {
     margin: auto;
@@ -478,8 +463,6 @@ h1,
     color: black;
   }
 
-  /* showcase-desktop */
-
   .showcase-mobile {
     background-image: url(./images/header.png);
     background-repeat: no-repeat;
@@ -506,15 +489,10 @@ h1,
     text-align: center;
   }
 
-  .company-name-mody-sec {
+  .company-name-body-sec {
     width: 100%;
     height: 100%;
   }
-
-  /* .container-mobile h2 {
-    padding-top: 50px;
-    font-size: 34px;
-  } */
 
   .description-mobile-1 {
     max-width: 65%;
@@ -534,8 +512,6 @@ h1,
     margin-top: -7px;
     font-size: 20px;
   }
-
-  /* program details section */
 
   .course-modules-mobile {
     display: flex;
@@ -563,8 +539,6 @@ h1,
     padding-bottom: 50px;
   }
 
-  /* about page */
-
   .box-1 {
     width: 60%;
   }
@@ -582,9 +556,9 @@ h1,
     gap: 20px;
   }
 
-  /* .projects {
-    display: grid;
-  } */
+  .trainer-details {
+    width: 100%;
+  }
 
   .partner-image-template {
     width: 100%;
@@ -601,8 +575,6 @@ h1,
     background-color: #272a31;
     color: #fff;
   }
-
-  /* dynamic-section */
 
   .speaker {
     width: 100%;
@@ -652,6 +624,3 @@ h1,
   background-color: #69738b;
 }
 
-/* .drop-down-image-list {
-  display: none;
-} */
