@@ -54,6 +54,7 @@ header {
   float: left;
   margin-left: 4vw;
   margin-top: 2vh;
+  cursor: pointer;
 }
 
 .bar {

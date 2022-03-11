@@ -1,8 +1,15 @@
-# Capstone Project: Similar to real-world project.
+# Capstone Project: 
+Similar to real-world project.
+
+## Acknowledgement:  
+I was delighted to be asked to build a prototype to the original design from Behance. The original design was created by **Cindi Shin**. She is a GUI and graphic designer, lives in Seoul, Korea.
+
+## Introductory video link:
+
+https://www.loom.com/share/2f0c70ee79134c9c9d421b9766611bda
 
 ## Description:
- This Project is about a web development training company, built with business specifications and similar to real-world projects. The original design was created by Cindi Shin. She is a GUI and graphic designer, lives in Seoul, Korea. Apart from working as a GUI designer, she dedicates her time in personal projects in different areas. 
- The pages look almost identical to the original. However, content has ben changed according to the project requirements. For now only two pages are made, the Home page and the About page. Remaining pages will be added shortly.
+ This Project is about a web development training company, built with business specifications and similar to real-world projects. The pages look almost identical to the original. However, content has been changed according to the project requirements. For now only two pages are made, the Home page and the About page. Remaining pages will be added shortly. The website will work equally good on a mobile device as well as in a desktop. 
 
  [Webpage Link ](https://shubh-dev.github.io/The-Capstone/)
 
